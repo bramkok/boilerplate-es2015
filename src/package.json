@@ -1,0 +1,23 @@
+{
+  "name": "__project_name__",
+  "version": "0.0.1",
+  "description": "__project_description__",
+  "main": "/dist/index.js",
+  "scripts": {
+    "start": "[ -d ./dist ] && node ./dist/index.js || node index.js",
+    "prebuild": "npm i; npm i -D babel-cli babel-preset-es2015",
+    "build": "npm run prebuild; babel --presets es2015 *.js -d dist",
+    "release": "echo '.*\n/*.js' > .npmignore ; npm run build ; npm publish"
+  },
+  "repository": "git+ssh://git@bitbucket.org/bramkok/__project_name__.git",
+  "author": {
+    "name": "Bram Kok",
+    "url": "https://bramkok.com"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.2.0",
+    "eslint-plugin-react": "^4.2.3"
+  }
+}
