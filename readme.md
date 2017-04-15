@@ -1,6 +1,6 @@
-# boilerplate-es6
+# boilerplate-es2015
 
-> A boilerplate for creating ECMAScript 2015 programs.
+> ECMAScript 2015 boilerplate
 
 ## Files
     readme.md

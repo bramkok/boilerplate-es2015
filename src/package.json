@@ -9,10 +9,9 @@
     "build": "npm run prebuild; babel --presets es2015 *.js -d dist",
     "release": "echo '.*\n/*.js' > .npmignore ; npm run build ; npm publish"
   },
-  "repository": "git+ssh://git@bitbucket.org/bramkok/__project_name__.git",
+  "repository": "git+ssh://git@bitbucket.org/__project_username__/__project_name__.git",
   "author": {
-    "name": "Bram Kok",
-    "url": "https://bramkok.com"
+    "name": "__project_author__"
   },
   "license": "MIT",
   "devDependencies": {
