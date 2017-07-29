@@ -15,16 +15,7 @@
 #### Scripts
 
 ##### start
-`[ -d ./dist ] && node ./dist/index.js || node index.js` Without building or publishing the development version of the program will run. After building or publishing the program it will run a transpiled version.
-
-##### prebuild
-`npm i; echo '{\"presets\":[\"babel-preset-es2015\"]}' > .babelrc && npm i -D babel-cli babel-preset-es2015` Installs all the declared development dependencies and Babel.
-
-##### build
-`npm run prebuild; babel *.js -d dist` Babel transpiles to ES5.
-
-##### release
-`echo '.*\n/*.js' > .npmignore ; npm run build ; npm publish` Publishes the package to npm. Also creates a .npmignore file that excludes most of the development files from the npm package.
+`node index.js`
 
 #### devDependencies
 * [eslint](https://www.npmjs.com/package/eslint)

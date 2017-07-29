@@ -2,12 +2,8 @@
   "name": "__project_name__",
   "version": "0.0.1",
   "description": "__project_description__",
-  "main": "/dist/index.js",
   "scripts": {
-    "start": "[ -d ./dist ] && node ./dist/index.js || node index.js",
-    "prebuild": "npm i; npm i -D babel-cli babel-preset-es2015",
-    "build": "npm run prebuild; babel --presets es2015 *.js -d dist",
-    "release": "echo '.*\n/*.js' > .npmignore ; npm run build ; npm publish"
+    "start": "node index.js"
   },
   "repository": "git+ssh://git@bitbucket.org/__project_username__/__project_name__.git",
   "author": {
