@@ -1,6 +1,6 @@
 {
   "name": "__project_name__",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "__project_description__",
   "scripts": {
     "start": "node index.js"
